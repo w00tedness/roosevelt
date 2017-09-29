@@ -248,7 +248,7 @@ App behavior parameters
   - Default: `43711`
 - `localhostOnly`: Listen only to requests coming from localhost in production mode. This is useful in environments where it is expected that HTTP requests to your app will be proxied through a more traditional web server like Apache or nginx. This setting is ignored in development mode.
   - Default: `true`
-- `disableLogger`: When this option is set to true, Roosevelt will not log HTTP requests to the console.
+- `disableLogger`: When this option is set to true, Roosevelt will not log HTTP requests to the console. **deprecated**
   - Default: `false`
 - `noMinify`: Disables HTML minification as well as the minification step in (supporting) CSS and JS compilers. Automatically enabled during dev mode. Can also be passed as the command line argument `-no-minify`.
   - Default: `false`
@@ -271,7 +271,7 @@ App behavior parameters
   - Default: `{extended: true}`
 - `bodyParserJsonParams`: Supply parameters to [body-parser.json](https://github.com/expressjs/body-parser#bodyparserjsonoptions).
   - Default: `{}`
-- `suppressLogs`: When this option is set to true, Roosevelt will not log app status to the console. Useful when running Roosevelt in a testing context.
+- `suppressLogs`: When this option is set to true, Roosevelt will not log app status and HTTP requests to the console. Useful when running Roosevelt in a testing context.
   - Default: `false`
 
 
